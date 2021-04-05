@@ -1,0 +1,9 @@
+ def levelOrder(self,root):
+        l=[root]
+        for i in l:
+            if(i):
+                l.append(i.left)
+                l.append(i.right)
+        for i in l:
+            if i:
+                print(i.data,end=' ')
